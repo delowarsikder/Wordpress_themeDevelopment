@@ -1,0 +1,1 @@
+<h2>this is my sample text .test how other file connet to index file</h2>

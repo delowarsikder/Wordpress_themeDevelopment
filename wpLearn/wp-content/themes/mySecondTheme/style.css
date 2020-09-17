@@ -1,0 +1,591 @@
+/*
+Theme Name: My second Theme
+Author:Delowar Sikder
+Version:1.0.0
+Author URI:www.facebook.com/delowarsikder.108
+Description:This is my Second theme
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #828b28;
+    margin: 2px auto;
+}
+
+
+/*clear*/
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* social icon */
+
+.social_icon {
+    list-style: none;
+    padding: 3px;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    background: #F9F3F0;
+    border-radius: 0px 10px 0px 10px;
+    margin-left: 20px;
+}
+
+.social_icon li {
+    float: none;
+    /* margin: 1px; */
+    background: #6e3500;
+}
+
+.social_icon li img {
+    border-radius: 20px 20px 20px 20px;
+    height: 50px;
+    width: 50px;
+}
+
+.main_wrapper {
+    width: 100%;
+}
+
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+    display: block;
+}
+
+.header_bg {
+    background: #FFB512;
+    border-bottom: 3px solid rgb(13, 77, 2);
+}
+
+.header {
+    background: #FFB512;
+    padding: 10px;
+    border-left: 2px solid #1E1E1E;
+    border-right: 2px solid #1E1E1E;
+    vertical-align: middle;
+}
+
+.header h3 a {
+    margin-bottom: 2px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.header p {
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav_bg {
+    background: #b39393;
+    border-bottom: 3px solid rgb(1, 6, 53);
+}
+
+.nav {
+    background: #b39393;
+    height: 39px;
+    border-left: 2px solid #1E1E1E;
+    border-right: 2px solid #1E1E1E;
+}
+
+.nav ul {
+    list-style: none;
+    background: #72680d;
+    z-index: 1000;
+    margin-top: 2px;
+}
+
+.nav ul li {
+    float: left;
+    border-right: 2px solid rgb(172, 164, 164);
+    border-left: 2px solid rgb(215, 223, 209);
+    position: relative;
+    width: auto;
+}
+
+.nav ul li:first-child {
+    border-left: none;
+}
+
+.nav ul li:last-child {
+    border-right: none;
+}
+
+.nav ul li a {
+    padding: 10px;
+    display: block;
+    width: 75px;
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+    transition: all 1s ease-in-out;
+}
+
+
+/* psudo class */
+
+.nav ul li a:hover {
+    color: #FFB512;
+    background: black;
+    width: 90px;
+    text-align: center;
+}
+
+.nav ul li a:active {
+    color: rgb(232, 233, 235);
+    background: rgb(44, 1, 126);
+}
+
+.nav ul li a:focus {
+    color: rgb(250, 244, 231);
+    background: rgb(21, 6, 156);
+}
+
+.nav ul li a:visited {
+    color: rgb(234, 236, 232);
+    background: rgb(190, 0, 0);
+}
+
+.nav ul li ul {
+    list-style: none;
+    left: -99999px;
+    position: absolute;
+    padding: 0;
+}
+
+.nav ul li ul li {
+    float: none;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid rgb(172, 164, 164);
+    border-bottom: 2px solid rgb(215, 223, 209);
+    position: relative;
+    width: 109px;
+}
+
+.nav ul li ul li a {
+    width: 130px;
+}
+
+.nav ul li ul li:last-child {
+    border-bottom: none;
+}
+
+.nav ul li ul li:first-child {
+    border-top: none;
+}
+
+.nav ul li:hover ul {
+    left: 0;
+    width: 110px;
+    cursor: pointer;
+}
+
+
+/* sub drop down */
+
+.nav ul li ul li ul {
+    list-style: none;
+    position: absolute;
+    top: -99999px;
+    padding: 0;
+    /* width: 120px; */
+    background: rgb(2, 42, 163);
+    color: #020000;
+}
+
+.nav ul li ul li:hover ul {
+    top: -10px;
+    left: 111px;
+}
+
+.nav ul li ul li ul li {}
+
+.nav ul li ul li ul a {
+    text-decoration: none;
+    width: 100px;
+}
+
+.nav ul li ul li ul a:hover {
+    width: 130px;
+}
+
+
+/* .slider_wrapper img
+{
+    width: 960px;
+    vertical-align: middle; remove default bottom margin
+} */
+
+.slider_bg {
+    background-color: #f7f3f3;
+}
+
+.slider_wrapper {
+    border-right: 2px solid rgb(1, 146, 49);
+    border-left: 2px solid rgb(248, 58, 6);
+}
+
+.content_bg {
+    background: #c2c09f;
+}
+
+.content_wrapper {
+    border-right: 2px solid rgb(248, 58, 6);
+    border-left: 2px solid rgb(1, 146, 49);
+    background-color: #f7f3f3;
+    border-top: 3px solid #157504;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.content_left {
+    float: left;
+    width: 600px;
+    text-align: justify;
+    margin-right: 30px;
+}
+
+.content_left h2 {
+    /*! background: #1E1E1E; */
+    margin: 10px;
+    margin-left: 0;
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+blockquote {
+    background: rgb(158, 199, 61);
+    color: aliceblue;
+    padding: 10px;
+    margin-left: 30px;
+    border-left: 3px solid rgb(231, 160, 5);
+}
+
+.sidebar_right {
+    float: left;
+    width: 300px;
+}
+
+.sidebar_right h2 {
+    margin: 10px;
+    color: #157504;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sidebar_right ul {
+    list-style: circle;
+}
+
+.sidebar_right ul li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(148, 18, 255);
+}
+
+#article_section {
+    margin-top: 20px;
+}
+
+#article_section figure img {
+    width: 300px;
+    height: 200px;
+    /* padding: 10px; */
+}
+
+#article_section figure {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding: 5px;
+    background: #05b90e;
+}
+
+#article_section figure figcaption {
+    color: #f7f3f3;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+/* css for feature image */
+
+#article_section img {
+    height: auto;
+    width: 600px;
+}
+
+.class_article_section {
+    margin-top: 20px;
+    border-bottom: 2px solid #1F2023;
+    overflow: hidden;
+}
+
+.class_article_section #image_paragraph img {
+    background-color: rgb(117, 10, 240);
+    width: 150px;
+    height: 100px;
+    display: block;
+    float: left;
+    margin: 5px 10px 5px 0px;
+    margin-top: 0px;
+    border: 2px solid #f50202;
+    padding: 5px;
+}
+
+.class_article_section #image_paragraph p {
+    /* margin-top: 10px; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-weight: bold; */
+}
+
+.right_sidebar {
+    border-bottom: 2px solid #6e0000;
+    /* overflow: hidden; */
+    /* margin: 10px; */
+}
+
+.right_sidebar ul {
+    /* margin-left:10px;  */
+    padding-left: 20px;
+}
+
+.right_sidebar h2 {
+    margin-left: 0px;
+}
+
+
+/* back top  */
+
+.button {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    float: right;
+}
+
+.button a:hover {
+    background: none;
+    color: #F9F3F0;
+}
+
+.button a {
+    background: #1E1E1E;
+    position: relative;
+    padding: 5px;
+    color: #F9F3F0;
+    display: block;
+    text-decoration: none;
+    z-index: 5;
+}
+
+.button a::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgb(25, 107, 4);
+    left: -50%;
+    top: 0;
+    transition: all .4s ease;
+    z-index: -5;
+}
+
+.button:hover.button a:before {
+    left: 0;
+    cursor: pointer;
+}
+
+.button a::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgb(107, 7, 4);
+    top: 0;
+    right: -50%;
+    transition: all .4s ease;
+    z-index: -5;
+}
+
+.button:hover.button a::after {
+    right: 0;
+    cursor: pointer;
+}
+
+
+/* footer section */
+
+.footer_bg {
+    background: #1E1E1E;
+}
+
+.footer {
+    background: #1E1E1E;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer p {
+    color: antiquewhite;
+}
+
+
+/* readmore */
+
+a.readmore {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Pagination */
+
+.main_pagination {
+    margin: 1em 0;
+    overflow: hidden;
+    font-size: 150%;
+}
+
+.pagination {
+    clear: both;
+    padding: 5px 0;
+    position: relative;
+    font-size: 96%;
+    line-height: 13px;
+    margin: 0.5em 0;
+    overflow: hidden;
+}
+
+.pagination span {
+    padding: 0 13px;
+}
+
+.pagination span,
+.pagination a {
+    display: block;
+    float: left;
+    margin: 2px 2px 2px 0;
+    padding: 11px;
+    text-decoration: none;
+    width: auto;
+    color: #fff;
+    background: #555;
+}
+
+.pagination a:hover {
+    color: #fff;
+    background: #067092;
+}
+
+.pagination .current {
+    padding: 11px;
+    background: #3279BB;
+    color: #fff;
+}
+
+
+/* control nivoslider */
+
+.nivoSlider img {
+    height: 330px !important;
+}
+
+.nivo-main-image {
+    height: 330px !important;
+}
+
+
+/* myself for meta data and image  */
+
+.post_meta {
+    border-left: 10px solid #2c7092;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 2px;
+    /* background-color: aqua; */
+}
+
+.home_article_wrapper {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.home_article_wrapper:last-of-type {
+    border-bottom: none;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.feature_image img.wp-post-image {
+    height: auto;
+    width: 100%;
+}
+
+
+/* search form */
+
+div.cust_search {
+    float: right;
+    margin-top: -2em;
+}
+
+#searchform label.screen-reader-text {
+    position: absolute;
+    left: -9999px;
+}
+
+div.cust_search #s {
+    vertical-align: top;
+    padding: 5px 10px;
+    padding-left: 5px;
+    color: #067092;
+    border: 1px solid #067092;
+}
+
+div.cust_search #searchsubmit {
+    vertical-align: top;
+    padding: 6px 10px;
+    border: none;
+    background: #0985ad;
+    color: #fff;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+div.cust_search #searchsubmit:hover {
+    background: #067092;
+    cursor: pointer;
+}
+
+
+/* search object */
+
+.search_object h2 {
+    color: #3279BB;
+    /* background: aquamarine; */
+}
+
+.search-no-results .container .content_wrapper .left_content {
+    color: red;
+    font-size: 200%;
+    margin-top: 12px;
+}
